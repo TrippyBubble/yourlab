@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YourLab Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, Russian first then English; a "where data lives" table as the one structured block. */
+:root {
+  --bg: #f6f8f8; --surface: #ffffff; --fg: #142322; --muted: #566664; --line: #d9e2e1; --accent: #00796f; --accent-soft: #e3f2f0;
+  --body: "Golos Text", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1615; --surface: #152120; --fg: #e4eeec; --muted: #9db0ad; --line: #26403c; --accent: #3fd2c3; --accent-soft: #143430; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0e1615; --surface: #152120; --fg: #e4eeec; --muted: #9db0ad; --line: #26403c; --accent: #3fd2c3; --accent-soft: #143430; color-scheme: dark }
+
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width: 44rem; margin: 0 auto; padding-block: 48px 64px; display: flex; flex-direction: column; gap: 40px; }
+header { display: flex; flex-direction: column; gap: 10px; }
+.app { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--accent); font-size: 15px; letter-spacing: .02em; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+h1 { font-size: clamp(28px, 5vw, 38px); line-height: 1.15; margin: 0; text-wrap: balance; font-weight: 700; }
+.meta { font-family: var(--mono); font-size: 13px; color: var(--muted); margin: 0; }
+nav { display: flex; gap: 8px; flex-wrap: wrap; }
+nav a { font-size: 14px; color: var(--accent); text-decoration: none; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+nav a:hover, nav a:focus-visible { border-color: var(--accent); outline: none; }
+section.lang { display: flex; flex-direction: column; gap: 22px; }
+h2 { font-size: 22px; margin: 0; padding-top: 8px; border-top: 1px solid var(--line); padding-top: 28px; text-wrap: balance; }
+h3 { font-size: 17px; margin: 0 0 4px; font-weight: 600; }
+p, ul { margin: 0; }
+ul { padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.block { display: flex; flex-direction: column; gap: 8px; }
+.lead { font-size: 17px; }
+.summary { background: var(--accent-soft); border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 6px; }
+.summary strong { color: var(--accent); }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 14.5px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 500; }
+code { font-family: var(--mono); font-size: 13px; }
+a { color: var(--accent); }
+@media (prefers-reduced-motion: no-preference) { nav a { transition: border-color .15s; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="app"><span class="dot"></span>YourLab</span>
+    <h1>Политика конфиденциальности · Privacy Policy</h1>
+    <p class="meta">Действует с 21.10.2026 · Effective October 21, 2026</p>
+    <nav><a href="#ru">Русский</a><a href="#en">English</a></nav>
+  </header>
+
+  <section class="lang" id="ru">
+    <div class="summary">
+      <p><strong>Коротко.</strong> Без входа все данные YourLab хранятся только на вашем устройстве. Если вы входите, чтобы синхронизировать данные, ваш профиль и записи хранятся в Google Firebase. Рекламы, отслеживания и аналитики нет, данные никому не продаются.</p>
+    </div>
+
+    <div class="block">
+      <h3>Кто отвечает за данные</h3>
+      <p>Приложение YourLab для iPhone и Mac разрабатывает LLC EnzyMed solutions, далее — «разработчик».</p>
+    </div>
+
+    <div class="block">
+      <h3>Без входа в аккаунт</h3>
+      <p>Протоколы, прогоны, расчёты, карты планшетов, составы сред, таймеры, счётчики и задачи хранятся в памяти устройства. Разработчик к ним доступа не имеет.</p>
+    </div>
+
+    <div class="block">
+      <h3>Вход и синхронизация</h3>
+      <p>Вход необязателен. Он нужен, чтобы синхронизировать данные между устройствами и работать вместе с коллегами. Войти можно через Google или Apple. При входе сервис Firebase Authentication (Google LLC) получает ваше имя, адрес электронной почты, ссылку на фото профиля (у Google) и создаёт идентификатор пользователя. Пароль видит только Google или Apple, приложение его не получает. При входе через Apple можно скрыть свою почту.</p>
+      <p>Записи, которые вы синхронизируете, хранятся в базе Cloud Firestore (Google Cloud) в «пространствах»: личном (видно только вам), а также в организациях и проектах. Записи организации или проекта видят его участники в соответствии с ролью. Вы сами приглашаете участников.</p>
+    </div>
+
+    <div class="block">
+      <h3>Где что хранится</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Данные</th><th>Где</th><th>Кто видит</th></tr></thead>
+          <tbody>
+            <tr><td>Записи без входа</td><td>Только устройство</td><td>Вы</td></tr>
+            <tr><td>Имя, почта, фото профиля, ID</td><td>Firebase Authentication, Cloud Firestore</td><td>Вы и участники ваших общих пространств</td></tr>
+            <tr><td>Синхронизированные записи</td><td>Cloud Firestore</td><td>Вы (личное) или участники организации и проекта</td></tr>
+            <tr><td>Фото чашек для подсчёта колоний</td><td>Только устройство, не загружаются</td><td>Вы</td></tr>
+            <tr><td>Курсы валют</td><td>Запрос к <code>cbr-xml-daily.ru</code> без личных данных</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Камера и фото</h3>
+      <p>Камера и медиатека используются только по вашему действию, чтобы снять или выбрать фото чашки Петри и отметить колонии. Фото обрабатываются на устройстве и никуда не отправляются.</p>
+    </div>
+
+    <div class="block">
+      <h3>Чего приложение не делает</h3>
+      <ul>
+        <li>не показывает рекламу и не отслеживает вас в других приложениях и на сайтах;</li>
+        <li>не собирает аналитику и данные о местоположении;</li>
+        <li>не продаёт и не передаёт данные третьим лицам, кроме перечисленных сервисов, которые их хранят.</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>Удаление данных</h3>
+      <p>В приложении: Настройки → Аккаунт и синхронизация → «Удалить аккаунт». Из облака удаляются профиль, вход, личное пространство и все организации и проекты, которые вы создали, вместе с их записями. Из пространств, созданных другими людьми, вы выходите. Записи, которые вы добавили в такие пространства, остаются у их участников. Данные на устройстве удаляются вместе с приложением.</p>
+    </div>
+
+    <div class="block">
+      <h3>Дети</h3>
+      <p>Приложение предназначено для работы в лаборатории и не рассчитано на детей младше 13 лет.</p>
+    </div>
+
+    <div class="block">
+      <h3>Изменения и связь</h3>
+      <p>Если политика изменится, новая редакция появится на этой странице с новой датой. Вопросы о данных — на странице поддержки: <a href="../support/">trippybubble.github.io/yourlab/support</a>.</p>
+    </div>
+  </section>
+
+  <section class="lang" id="en">
+    <h2>English</h2>
+    <div class="summary">
+      <p><strong>In short.</strong> Without signing in, all YourLab data stays on your device. If you sign in to sync, your profile and records are stored in Google Firebase. There are no ads, no tracking and no analytics, and your data is never sold.</p>
+    </div>
+
+    <div class="block">
+      <h3>Who is responsible</h3>
+      <p>YourLab for iPhone and Mac is developed by LLC EnzyMed solutions (the “developer”).</p>
+    </div>
+
+    <div class="block">
+      <h3>Without an account</h3>
+      <p>Protocols, runs, calculations, plate maps, media recipes, timers, counters and tasks are stored on your device. The developer has no access to them.</p>
+    </div>
+
+    <div class="block">
+      <h3>Sign-in and sync</h3>
+      <p>Signing in is optional and is used to sync between devices and to work with colleagues. You can sign in with Google or Apple. Firebase Authentication (Google LLC) then receives your name, email address, profile photo link (Google only) and creates a user ID. Your password is seen only by Google or Apple, never by the app. With Sign in with Apple you can hide your email.</p>
+      <p>Records you sync are stored in Cloud Firestore (Google Cloud) in “spaces”: your personal space (visible only to you) and organizations or projects, whose members see the records according to their role. You choose who to invite.</p>
+    </div>
+
+    <div class="block">
+      <h3>Camera and photos</h3>
+      <p>The camera and photo library are used only when you choose to take or pick a photo of a Petri dish to mark colonies. Photos are processed on the device and are not uploaded.</p>
+    </div>
+
+    <div class="block">
+      <h3>Other network requests</h3>
+      <p>The currency converter requests exchange rates from <code>cbr-xml-daily.ru</code>. No personal data is sent.</p>
+    </div>
+
+    <div class="block">
+      <h3>What the app does not do</h3>
+      <ul>
+        <li>no advertising and no tracking across other apps or websites;</li>
+        <li>no analytics and no location data;</li>
+        <li>no selling or sharing of data with third parties other than the storage services listed above.</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>Deleting your data</h3>
+      <p>In the app: Settings → Account and sync → “Delete account”. This removes your profile, sign-in, personal space, and every organization and project you created, with their records, from the cloud. You leave spaces created by other people. Records you added to those spaces stay with their members. Data on the device is removed when you delete the app.</p>
+    </div>
+
+    <div class="block">
+      <h3>Children</h3>
+      <p>The app is a laboratory tool and is not directed to children under 13.</p>
+    </div>
+
+    <div class="block">
+      <h3>Changes and contact</h3>
+      <p>If this policy changes, the new version will be posted on this page with a new date. Questions about your data: <a href="../support/">trippybubble.github.io/yourlab/support</a>.</p>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>

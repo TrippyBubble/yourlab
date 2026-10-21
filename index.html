@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YourLab</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, Russian first then English; a "where data lives" table as the one structured block. */
+:root {
+  --bg: #f6f8f8; --surface: #ffffff; --fg: #142322; --muted: #566664; --line: #d9e2e1; --accent: #00796f; --accent-soft: #e3f2f0;
+  --body: "Golos Text", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1615; --surface: #152120; --fg: #e4eeec; --muted: #9db0ad; --line: #26403c; --accent: #3fd2c3; --accent-soft: #143430; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0e1615; --surface: #152120; --fg: #e4eeec; --muted: #9db0ad; --line: #26403c; --accent: #3fd2c3; --accent-soft: #143430; color-scheme: dark }
+
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width: 44rem; margin: 0 auto; padding-block: 48px 64px; display: flex; flex-direction: column; gap: 40px; }
+header { display: flex; flex-direction: column; gap: 10px; }
+.app { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--accent); font-size: 15px; letter-spacing: .02em; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+h1 { font-size: clamp(28px, 5vw, 38px); line-height: 1.15; margin: 0; text-wrap: balance; font-weight: 700; }
+.meta { font-family: var(--mono); font-size: 13px; color: var(--muted); margin: 0; }
+nav { display: flex; gap: 8px; flex-wrap: wrap; }
+nav a { font-size: 14px; color: var(--accent); text-decoration: none; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+nav a:hover, nav a:focus-visible { border-color: var(--accent); outline: none; }
+section.lang { display: flex; flex-direction: column; gap: 22px; }
+h2 { font-size: 22px; margin: 0; padding-top: 8px; border-top: 1px solid var(--line); padding-top: 28px; text-wrap: balance; }
+h3 { font-size: 17px; margin: 0 0 4px; font-weight: 600; }
+p, ul { margin: 0; }
+ul { padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.block { display: flex; flex-direction: column; gap: 8px; }
+.lead { font-size: 17px; }
+.summary { background: var(--accent-soft); border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 6px; }
+.summary strong { color: var(--accent); }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 14.5px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 500; }
+code { font-family: var(--mono); font-size: 13px; }
+a { color: var(--accent); }
+@media (prefers-reduced-motion: no-preference) { nav a { transition: border-color .15s; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="app"><span class="dot"></span>YourLab</span>
+    <h1>YourLab — лабораторный журнал для iPhone и Mac</h1>
+    <p class="meta">LLC EnzyMed solutions</p>
+    <p class="lead">Интерактивные протоколы с таймерами на каждый образец, расчёты растворов и сред, подсчёт колоний и клеток, карты планшетов и синхронизация с коллегами.</p>
+    <nav><a href="privacy/">Политика конфиденциальности</a><a href="support/">Поддержка</a></nav>
+  </header>
+</main>
+</body>
+</html>
